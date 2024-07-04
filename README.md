@@ -6,8 +6,8 @@
 
 <h1 align="center">Pointless OFT Project</h1>
 
-<p> Layerzero documentation </p>
-<p align="center">
+<p> Layerzero documentation links</p>
+<p align="left">
   <a href="https://docs.layerzero.network/contracts/oft" style="color: #a77dff">Quickstart</a> | <a href="https://docs.layerzero.network/contracts/oapp-configuration" style="color: #a77dff">Configuration</a> | <a href="https://docs.layerzero.network/contracts/options" style="color: #a77dff">Message Execution Options</a> | <a href="https://docs.layerzero.network/contracts/endpoint-addresses" style="color: #a77dff">Endpoint Addresses</a>
 </p>
 
@@ -99,5 +99,5 @@ npx hardhat lz:deploy --help
 <br></br>
 
 <p align="center">
-  Layerzero Discord <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> 
+  Layerzero <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> 
 </p>
