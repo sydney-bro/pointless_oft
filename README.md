@@ -4,19 +4,14 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://layerzero.network" style="color: #a77dff">Homepage</a> | <a href="https://docs.layerzero.network/" style="color: #a77dff">Docs</a> | <a href="https://layerzero.network/developers" style="color: #a77dff">Developers</a>
-</p>
+<h1 align="center">Pointless OFT Project</h1>
 
-<h1 align="center">OFT Example</h1>
-
+<p> Layerzero documentation </p>
 <p align="center">
   <a href="https://docs.layerzero.network/contracts/oft" style="color: #a77dff">Quickstart</a> | <a href="https://docs.layerzero.network/contracts/oapp-configuration" style="color: #a77dff">Configuration</a> | <a href="https://docs.layerzero.network/contracts/options" style="color: #a77dff">Message Execution Options</a> | <a href="https://docs.layerzero.network/contracts/endpoint-addresses" style="color: #a77dff">Endpoint Addresses</a>
 </p>
 
-<p align="center">Template project for getting started with LayerZero's <code>OFT</code> contract development.</p>
-
-## 1) Developing Contracts
+## 1) Environment Setup
 
 #### Installing dependencies
 
@@ -26,7 +21,7 @@ We recommend using `pnpm` as a package manager (but you can of course use a pack
 pnpm install
 ```
 
-#### Compiling your contracts
+#### Compiling contracts
 
 This project supports both `hardhat` and `forge` compilation. By default, the `compile` command will execute both:
 
@@ -74,7 +69,7 @@ Or adjust the `package.json` to for example remove `hardhat` tests:
 + "test": "forge test"
 ```
 
-## 2) Deploying Contracts
+## 2) Deployment
 
 Set up deployer wallet/account:
 
@@ -101,10 +96,8 @@ More information about available CLI arguments can be found using the `--help` f
 npx hardhat lz:deploy --help
 ```
 
-By following these steps, you can focus more on creating innovative omnichain solutions and less on the complexities of cross-chain communication.
-
 <br></br>
 
 <p align="center">
-  Join our community on <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> | Follow us on <a href="https://twitter.com/LayerZero_Labs" style="color: #a77dff">Twitter</a>
+  Layerzero Discord <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> 
 </p>
