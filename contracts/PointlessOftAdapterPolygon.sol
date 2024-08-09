@@ -14,7 +14,7 @@ contract PointlessOftAdapterPolygon is OFTAdapter {
     uint256 public bridgeFeeTreasury = 500000 * 10 ** 18; 
     uint256 public bridgeFeeBurned = 2000000 * 10 ** 18;
     address public treasuryAddress = 0x810B93F0DEc3a84AA3B8a210D033858fbEE41204; // pointless treasury
-    address public polygonBurnAddress = 0x000000000000000000000000000000000000dEaD;
+    address public constant polygonBurnAddress = 0x000000000000000000000000000000000000dEaD;
 
      constructor(
         address _tokenAddress,
