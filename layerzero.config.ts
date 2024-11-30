@@ -5,17 +5,17 @@ import type { OAppOmniGraphHardhat, OmniPointHardhat } from '@layerzerolabs/tool
 
 const polygonContract: OmniPointHardhat = {
     eid: EndpointId.POLYGON_V2_MAINNET,
-    contractName: 'ptpt_adapter_polygon',
+    contractName: 'PointlessOftAdapterPolygon',
 }
 
 const zksyncContract: OmniPointHardhat = {
     eid: EndpointId.ZKSYNC_V2_MAINNET,
-    contractName: 'ptless_zks',
+    contractName: 'PointlessOftZkSync',
 }
 
 const baseContract: OmniPointHardhat = {
     eid: EndpointId.BASE_V2_MAINNET,
-    contractName: 'ptpt_base',
+    contractName: 'PointlessOftBase',
 }
 
 const config: OAppOmniGraphHardhat = {
@@ -25,6 +25,9 @@ const config: OAppOmniGraphHardhat = {
         },
         {
             contract: baseContract,
+        },
+        {
+            contract: zksyncContract,
         },
     ],
     connections: [
@@ -55,7 +58,35 @@ const config: OAppOmniGraphHardhat = {
                     },
                 ],
             },
-        }
+        },
+        {
+            from: zksyncContract,
+            to: baseContract,
+            config: {
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 200000,
+                        value: 0,
+                    },
+                ],
+            },
+        },
+        {
+            from: baseContract,
+            to: zksyncContract,
+            config: {
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 200000,
+                        value: 0,
+                    },
+                ],
+            },
+        },
     ],
 }
 
