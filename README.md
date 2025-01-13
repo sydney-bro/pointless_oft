@@ -101,3 +101,14 @@ npx hardhat lz:deploy --help
 <p align="center">
   Layerzero <a href="https://discord-layerzero.netlify.app/discord" style="color: #a77dff">Discord</a> 
 </p>
+
+## 3) Current Deployment
+
+pointless was originally deployed as a standard ERC20 token on Polygon network.
+Later on, we decided to go multi-chain and deploy it on base and zkSync too. We used layerzero OFT (Omnichain fungible token) standard to deploy pointless on base and zkSync.
+Because we already had a token, we created an OFT Adapter on polygon. On base and zkSync, it is just plain OFT.
+Below are the pointless CAs:
+Original pointless token on Polygon: 0x9B8cc6320F22325759B7D2CA5CD27347bB4eCD86
+Pointless OFT Adapter on Polygon: 0x67e6BA651Edcf8681766dDCbFD836FBe430adB7A
+Pointless OFT on Base: 0xaF13924f23Be104b96c6aC424925357463b0d105
+Pointless OFT on zkSync: 0xFD21D5E148dF3B93AE6deC416544Fb3d3E21260C
